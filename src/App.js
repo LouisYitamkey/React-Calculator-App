@@ -7,6 +7,9 @@ export default function App() {
   const [dateDiffInYears, setDateDiffInYears] = useState(0); 
   const [dateDiffInDays, setDateDiffInDays] = useState(0);
   const [dateDiffInMonths, setdateDiffInMonths] = useState(0)
+  const [dateDiffInMinutes, setDateDiffInMinutes ] = useState(0)
+  const [dateDiffInSeconds, setDateDiffInSeconds] = useState(0)
+
   
   function handleChange(event) {
     setDate(moment(new Date(event.target.value)).format("YYYY-MM-DD"));
@@ -20,6 +23,10 @@ export default function App() {
 
     setDateDiffInDays(currentDate.diff(dateOfBirth, 'days'))
     setdateDiffInMonths(currentDate.diff(dateOfBirth, 'months'))
+    setDateDiffInMinutes(currentDate.diff(dateOfBirth, 'minutes'))
+    setDateDiffInSeconds(currentDate.diff(dateOfBirth, 'seconds'))
+    
+    
 
   }
 
@@ -32,10 +39,8 @@ export default function App() {
 
       </div>
             
-    
-      
-      <h1 className="text-base sm:text md:px-40 text-center px-8 md:text-sm lg:text-2xl font-semibold mb-6 ">This App Takes Date of Birth As the  Input and Returns the Difference in  <span className="text-green-600">Years</span> , <span className="text-green-600">Months</span>, and <span className="text-green-600">Days</span> as compared to the current date. </h1>
 
+      <h1 className="text-base sm:text md:px-40 text-center px-8 md:text-sm lg:text-2xl font-semibold mb-6 ">This App Takes Date of Birth As the  Input and Returns the Difference in  <span className="text-green-600">Years</span> , <span className="text-green-600">Months</span>, and <span className="text-green-600">Days</span> as compared to the current date. </h1>
 
       <form className="flex justify-center items-center">
       <label className="text-green-600" for="start">Date of Birth &nbsp; :&nbsp;&nbsp;  </label> <br/> 
@@ -52,6 +57,10 @@ export default function App() {
        <p> Date difference in months: <span className="text-green-600">{dateDiffInMonths}</span> </p>
 
        <p> Date difference in days: <span className="text-green-600"> {dateDiffInDays}</span></p>
+
+       <p> Date difference in minutes: <span className="text-green-600"> {dateDiffInMinutes}</span></p>
+
+       <p> Date difference in secondss: <span className="text-green-600"> {dateDiffInSeconds}</span></p>
       
       </div>
       
@@ -67,3 +76,4 @@ export default function App() {
     </div>
   );
 }
+
