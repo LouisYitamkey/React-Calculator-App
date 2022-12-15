@@ -34,7 +34,7 @@ export default function App() {
             
     
       
-      <h1 className="text-base sm:text md:px-40 text-center  md:text-sm lg:text-2xl font-semibold mb-6 ">This App Takes Date of Birth As the  Input and Returns the Difference in  <span className="text-green-600">Years</span> , <span className="text-green-600">Months</span>, and <span className="text-green-600">Days</span> as compared to the current date. </h1>
+      <h1 className="text-base sm:text md:px-40 text-center px-8 md:text-sm lg:text-2xl font-semibold mb-6 ">This App Takes Date of Birth As the  Input and Returns the Difference in  <span className="text-green-600">Years</span> , <span className="text-green-600">Months</span>, and <span className="text-green-600">Days</span> as compared to the current date. </h1>
 
 
       <form className="flex justify-center items-center">
