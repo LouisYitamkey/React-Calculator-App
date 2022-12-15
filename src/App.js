@@ -32,12 +32,7 @@ export default function App() {
 
   return (
     <div className="App  ">
-      <div className="flex justify-center items-center bg-slate-300">
-      <p className="  mb-10   mt-10 md:mt-16 text-black text-2xl  font-black py-2 px-4 ">  
-         Date Calculator <i class="fa-solid fa-calculator text-3xl text-red-400 "></i>
-        </p>
-
-      </div>
+     
             
 
       <h1 className="text-base bg-red-100 sm:text md:px-40 text-center px-8 py-6 md:text-sm lg:text-2xl font-semibold mb-6 ">This App Takes Date of Birth As the  Input and Returns the Difference in  <span className="text-green-600">Years</span> , <span className="text-green-600">Months</span>, and <span className="text-green-600">Days</span> as compared to the current date. </h1>
@@ -52,16 +47,16 @@ export default function App() {
       <br />
       
       <div className="mt-2 text-center">
-        <p className="bg-green-400 text-2xl py-2 font-black "> Date Differences:</p>
-      <p className="text-xl bg-gray-400 text-white font-serif px-4 py-4">  Years&nbsp;: <span className="text-green-500 text-2xl bg-black px-2 py-2 "> {dateDiffInYears}</span></p>
+        <p className="bg-green-400 text-lg py-2 font-black "> Date Differences:</p>
+      <p className="text-xl bg-gray-400 text-white font-serif px-2 py-2">  Years&nbsp;: <span className="text-green-500 text-2xl bg-black px-2 py-2 "> {dateDiffInYears}</span></p>
 
-       <p className="text-xl bg-gray-400 text-white font-serif px-4 py-4"> Months&nbsp;: <span className="text-green-600 text-2xl bg-black px-2 py-2">{dateDiffInMonths}</span> </p>
+       <p className="text-xl bg-gray-400 text-white font-serif px-2 py-2"> Months&nbsp;: <span className="text-green-600 text-2xl bg-black px-2 py-2">{dateDiffInMonths}</span> </p>
 
-       <p className="text-xl bg-gray-400 text-white font-serif px-4 py-4"> Days&nbsp;: <span className="text-green-600 text-2xl bg-black px-2 py-2"> {dateDiffInDays}</span></p>
+       <p className="text-xl bg-gray-400 text-white font-serif px-2 py-2"> Days&nbsp;: <span className="text-green-600 text-2xl bg-black px-2 py-2"> {dateDiffInDays}</span></p>
 
-       <p className="text-xl bg-gray-400 text-white font-serif px-4 py-4"> Minutes&nbsp;: <span className="text-green-600 text-2xl bg-black px-2 py-2"> {dateDiffInMinutes}</span></p>
+       <p className="text-xl bg-gray-400 text-white font-serif px-2 py-2"> Minutes&nbsp;: <span className="text-green-600 text-2xl bg-black px-2 py-2"> {dateDiffInMinutes}</span></p>
 
-       <p className="text-xl bg-gray-400 text-white font-serif px-4 py-4"> Seconds&nbsp;: <span className="text-green-600 text-2xl bg-black px-2 py-2"> {dateDiffInSeconds}</span></p>
+       <p className="text-xl bg-gray-400 text-white font-serif px-2 py-2"> Seconds&nbsp;: <span className="text-green-600 text-2xl bg-black px-2 py-2"> {dateDiffInSeconds}</span></p>
       
       </div>
       
@@ -73,6 +68,9 @@ export default function App() {
      
       </div>
       <p className="mt-8 text-center "> <span className="font-bold">How To Use</span> : Input your date of birth and click on generate results to display the results. </p>
+
+      <p className="text-center text-sm font-black py-4 text-blue-500"> Kwaku Louis&copy;</p>
+     
      
     </div>
   );
