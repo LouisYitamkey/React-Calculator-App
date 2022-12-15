@@ -47,11 +47,11 @@ export default function App() {
       <br />
       
       <div className="mt-2 text-center">
-      <p> Date difference in  years <span className="text-green-500"> {dateDiffInYears}</span></p>
+      <p> Date difference in  years: <span className="text-green-500"> {dateDiffInYears}</span></p>
 
-       <p> Date difference in months <span className="text-green-600">{dateDiffInMonths}</span> </p>
+       <p> Date difference in months: <span className="text-green-600">{dateDiffInMonths}</span> </p>
 
-       <p> Date difference in days <span className="text-green-600"> {dateDiffInDays}</span></p>
+       <p> Date difference in days: <span className="text-green-600"> {dateDiffInDays}</span></p>
       
       </div>
       
