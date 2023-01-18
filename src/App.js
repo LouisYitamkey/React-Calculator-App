@@ -89,7 +89,7 @@ export default function App() {
 
 <div className="grid grid-cols-3  px-2  pt-8 md:grid-cols-3  gap-2 md:gap-6">
 <div className="bg-red-200 px-5 rounded-md py-5">  <p className="font-medium ">  Minutes&nbsp;:<br/>  <br/>  <span className="bg-cyan-100 rounded-md text-black px-4 py-2"> {dateDiffInMinutes}</span></p></div>
-  <div className="bg-red-200 px-5  rounded-md py-5">  <p className="font-medium">Seconds:<br/>  <br/> <span className="bg-cyan-100 rounded-md text-black text-lg px-4 py-2">{dateDiffInSeconds}</span> </p></div>
+ 
 
 </div>
 
